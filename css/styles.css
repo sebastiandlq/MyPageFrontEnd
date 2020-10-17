@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Roboto:wght@100;400;700&display=swap');
+/* Variables */
+:root{
+    /* Fondos */
+    --fondo-1: #7C80F2;
+    --fondo-2: #1AB0C7;
+    --fondo-3: #20DDFA;
+    --sombra: #F2F2EA;
+    /*Colores de Texto */
+    --texto-1: #000000;
+    --texto-2: #ffffff;
+    /* Colores+ */
+    --button: #61D797;
+}
+
+/* General */
+body{
+    background-color: var(--fondo-1);
+    max-width: 100vw;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.link{
+    color: var(--texto-1);
+    font-size: 1.5em;
+    padding: 0.5em;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+/* Header */
+header{
+    background-color: var(--fondo-3);
+    height: 100px;
+}
+.header__list{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.list__option{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--texto-1);
+    margin: 0 2em;
+    letter-spacing: 0.1em;
+}
+/* Proyectos */
+#main-tittle{
+    text-align: center;
+    margin: 1em 0;
+}
+.projects{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project{
+    position: relative;
+    max-width: 460px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--texto-2);
+    border: solid var(--texto-2) 5px;
+    border-radius: 36px;
+    box-shadow: -10px 10px 0px 10px var(--sombra);
+    overflow: hidden;
+    margin: 2em;    
+}
+.project__image{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+.project__title{
+    margin-bottom: 1em;
+}
+.blur{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo-3);
+    border-radius: 100%;
+    filter: blur(100px);
+}
+#index-link{
+    margin-left: 45%;
+}
+/* Proyectos caja */
+.project-box{
+    border: solid var(--texto-2) 6px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: var(--fondo-2);
+    min-height: 200px;
+    margin: 1em 0.5em;
+    padding: 0.5em;
+}
+.--videogame{
+    border-color: var(--fondo-2);
+    background-color: var(--fondo-3);
+}
+.project-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.project-box__images{
+    display: inline;
+}
+.project-box__image{
+    width: 45%;
+    margin: 1em;
+}
+/* ¿Quien soy? */
+.presentacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.biografia{
+    padding: 1em;
+}
+.social-links{
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-link{
+    color: var(--texto-2);
+    text-decoration: none;
+    margin: 0.2em 10%;
+}
+.tools__photos{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-flow: column;
+    text-align: center;
+    height: 50%;
+}
+.tools img{
+    width: 4em;
+    height: 4em;
+    align-self: flex-end;
+    margin: 0 auto;
+}
+/* Titulos */
+.title{
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.title--big{
+    font-size: 3em;
+    font-weight: 700;
+}
+/* Botones */
+.button{
+    padding: 0.2em 0.8em;
+    margin: 0.4em;
+    background-color: var(--button);
+    border-radius: 10px;
+}
