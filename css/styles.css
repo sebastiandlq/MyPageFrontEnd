@@ -15,6 +15,7 @@
     /*Colores de Texto */
     --texto-1: #000000;
     --texto-2: #ffffff;
+    --texto-sombra: #7C7C7C;
     /* Colores+ */
     --button: #61D797;
 }
@@ -28,6 +29,7 @@ img{
     width: 100%;
     height: 100%;
 }
+/*Para cels*/
 .icon-menu{
     color: var(--texto-1);
     font-size: 3em;
@@ -40,11 +42,16 @@ img{
 .desactivated{
     display: none;
 }
+/*Fin de Para Cels*/
 .link{
     color: var(--texto-1);
     font-size: 1.5em;
     padding: 0.5em;
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+.link:hover{
+    text-decoration: none;
+    color: white;
 }
 /* Header */
 header{
@@ -74,6 +81,12 @@ header.activated{
     margin: 0 2em;
     letter-spacing: 0.1em;
 }
+.list__option:hover{
+    color: var(--texto-sombra);
+}
+.list__option:active{
+    color: white;
+}
 /* Proyectos */
 #main-tittle{
     text-align: center;
@@ -101,6 +114,20 @@ header.activated{
     box-shadow: -10px 10px 0px 10px var(--sombra);
     overflow: hidden;
     margin: 2em;    
+    text-decoration: none;
+
+    /*Dejado para un mejor hoover*/
+    transition: 50ms;
+}
+.project:hover{
+    box-shadow: -5px 5px 0px 5px var(--sombra);
+
+    /*Afectado por max-width y max-height*/
+    width: 110%;
+    height: 110%;
+
+    /*Dejado para un mejor hoover*/
+    transition: 50ms;
 }
 .project__image{
     position: absolute;
@@ -139,6 +166,16 @@ header.activated{
     min-height: 200px;
     margin: 1em 0.5em;
     padding: 0.5em;
+
+    /*Dejado para un mejor hoover*/
+    transition: 50ms;
+}
+.project-box:hover{
+    margin: 2em 0.5em;
+    box-shadow: 0px 0px 100px var(--sombra);
+
+    /*Dejado para un mejor hoover*/
+    transition: 50ms;
 }
 .--videogame{
     border-color: var(--fondo-2);
@@ -181,6 +218,9 @@ header.activated{
     text-decoration: none;
     margin: 0.2em 10%;
 }
+.social-link:hover{
+    text-shadow: 0px 0px 20px var(--sombra);
+}
 .tools__photos{
     display: grid;
     grid-template-rows: 2fr 1fr 2fr 1fr;
@@ -193,6 +233,10 @@ header.activated{
     height: 4em;
     align-self: flex-end;
     margin: 0 auto;
+}
+.tools img:hover{
+    width: 4.5em;
+    height: 4.5em;
 }
 .last-project{
     display: flex;
