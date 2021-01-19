@@ -171,7 +171,8 @@ header.activated{
     transition: 50ms;
 }
 .project-box:hover{
-    margin: 2em 0.5em;
+    transform: scaleY(1.1);
+    margin: 2em 0;
     box-shadow: 0px 0px 100px var(--sombra);
 
     /*Dejado para un mejor hoover*/

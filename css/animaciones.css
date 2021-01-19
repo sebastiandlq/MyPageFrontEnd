@@ -1,0 +1,51 @@
+@keyframes enterUp{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);       
+    }
+}
+header{
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: enterUp;
+    -webkit-animation-name: enterUp;
+}
+
+@keyframes explosion{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.project, .tools__photos img, [class^="icon-"], [class*=" icon-"]{
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+    animation-name: explosion;
+    -webkit-animation-name: explosion;
+}
+
+@keyframes enterFromLeft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.project-box, .biografia{
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: enterFromLeft;
+    -webkit-animation-name: enterFromLeft;
+}
