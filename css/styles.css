@@ -161,7 +161,7 @@ header.activated{
     border: solid var(--texto-2) 6px;
     border-radius: 30px;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 40% 60%;
     background-color: var(--fondo-2);
     min-height: 200px;
     margin: 1em 0.5em;
@@ -188,6 +188,9 @@ header.activated{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+}
+.project-description__text{
+    width: 100%;
 }
 .project-box__images{
     display: inline;
